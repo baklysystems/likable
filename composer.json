@@ -1,0 +1,38 @@
+{
+    "name": "amrnrd/likeable",
+    "description": "Add likeable/liker definition to Models",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Farag",
+            "email": "daniefarag146@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "AmrNRD\\Likeable\\":"src/",
+            "App\\":"app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AmrNRD\\Likeable\\":"src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "AmrNRD\\Likeable\\LikeableServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
